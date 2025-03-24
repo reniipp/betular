@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap (Desde CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="macaron.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kyy7ezv.css">
+
+    <title>Betular | Cookie Pistacho y Frambuesa</title>
+</head>
+<body>
+    <header class="container-fluid" id="header">
+        <nav class="d-flex justify-content-between align-items-center p-3">      
+            <a href="#" id="logo"> <img src="img/logo.png" alt=""></a> 
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="receta">
+        <div class="imagen">
+            <img src="img/pyf2.jpg" alt="Macarons">
+        </div>
+        <div class="contenido">
+            <h2>cookie de pistacho y frambuesa</h2>
+            <hr>
+            <p><strong>Dificultad</strong></p>
+            <div class="dificultad">
+                <span class="punto lleno"></span>
+                <span class="punto lleno"></span>
+                <span class="punto vacio"></span>
+                <span class="punto vacio"></span>
+                <span class="punto vacio"></span>
+            </div>
+            <p><strong>Preparación:</strong> <br>1 hora y 30 minutos</p>
+            <p><strong>Horneado:</strong> <br>10 minutos</p>
+            <p><strong>Rinde:</strong> <br>12 porciones</p>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    INGREDIENTES
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>1 taza de harina</li>
+                        <li>1/2 taza de azúcar</li>
+                        <li>1/4 taza de manteca (a temperatura ambiente)​</li>
+                        <li>1 huevo​</li>
+                        <li>1/2 taza de pistachos (picados finamente)</li>
+                        <li>1/4 taza de mermelada de frambuesa (o más si te gusta con mucha frambuesa)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    PASO 1
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>Preparar la masa: <br> En un bowl, batir la manteca con el azúcar hasta obtener una mezcla cremosa. Añadir el huevo y la vainilla. Incorporar la harina, el polvo de hornear y los pistachos picados. Mezclar bien hasta formar una masa suave.​</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    PASO 2
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>Formar las galletas: <br>Precalentar el horno a 180°C. Sobre una superficie enharinada, estirar la masa y cortar las galletas con un cortante de tu elección (puedes hacer círculos o formas divertidas). </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    PASO 3
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>Agregar la mermelada:<br> olocar una pequeña cantidad de mermelada de frambuesa en el hueco de cada galleta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    PASO 4
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>Hornear: <br> Hornear las galletas durante 10-12 minutos, o hasta que estén doradas en los bordes. Sacarlas del horno y dejarlas enfriar sobre una rejilla.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="boton">
+        <a href="recetas.html" class="boton">volver</a>
+    </section>
+    
+    
+    <footer id="footer">
+        <p>© Copyright, Betular Pâtisserie, 2025</p>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let buttons = document.querySelectorAll(".accordion-button");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    let target = document.querySelector(this.getAttribute("data-target"));
+                    
+                    if (target.classList.contains("show")) {
+                        target.classList.remove("show");
+                    } else {
+                        target.classList.add("show");
+                    }
+                });
+            });
+        });
+    </script>  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let accordionButtons = document.querySelectorAll(".accordion-button");
+
+            accordionButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    let item = this.closest(".accordion-item");
+                    let collapse = item.querySelector(".accordion-collapse");
+
+                    // Verificar si está abierto
+                    let isOpen = item.classList.contains("active");
+
+                    // Cerrar todos los acordeones
+                    document.querySelectorAll(".accordion-item").forEach(i => {
+                        i.classList.remove("active");
+                        i.querySelector(".accordion-collapse").classList.remove("show");
+                    });
+
+                    // Si no estaba abierto, lo abrimos
+                    if (!isOpen) {
+                        item.classList.add("active");
+                        collapse.classList.add("show");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

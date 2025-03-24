@@ -1,0 +1,191 @@
+body {
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*CONTACTO*/
+header {
+    padding-top: 15px;
+    height: 100vh;
+    background-image: url(img/banner.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+}
+
+#logo {
+    margin-left: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    background-color: #f2d5d4;;
+}
+
+.nav-link {
+    color: #650014;
+    font-style: italic;
+    font-size: 20px;
+    margin-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+    background-color: #f2d5d4;
+}
+
+.nav-link:hover {
+    color:#f2d5d4;
+    background-color: #650014;
+}
+
+.experiencia-betular1 {
+    height: 100vh;
+    background: url(img/betular3.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+#text-box1 {
+    max-width: 80%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+#text-box1 hr {
+    width: 80%;
+    border: 1px solid #f2d5d4;
+    margin: 10px 0;
+}
+
+#text-box1 h2 {
+    color: #f2d5d4;
+    font-size: 40px;
+}
+
+#text-box1 p {
+    color: #f2d5d4;
+    font-size: 25px;
+}
+
+.banda-betular-container1 {
+    overflow: hidden;
+    background-color: #f7df8c;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.banda-betular1 {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+    font-size: 25px;
+    font-style: italic;
+    color: #650014;
+}
+
+.banda-betular1 span {
+    padding: 0 40px;
+    margin-right: 0;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.newsletter {
+    padding: 40px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    color: #650d1b;
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto;
+    border: 0.5px solid #650d1b;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #650d1b;
+}
+
+button {
+    background-color: #650d1b;
+    color: white;
+    padding: 10px 80px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: #4d0915;
+}
+
+.banner {
+        height: 80vh; 
+        background-image: url(img/betular4.png);
+        background-size: contain;
+        background-position: center; 
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+}
+
+#footer {
+    height: 100px;
+    text-align: right;
+    justify-content: right;
+    color: #650014;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
